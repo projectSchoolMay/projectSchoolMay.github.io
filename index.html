@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project</title>
+	<link rel="shortcut icon" href="img/backend.jpg">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="full">
+			<header class="header lock-padding _scroll">
+				<div class="header__wrapper">
+					<div class='header__container container'>
+						<div class="header__body">
+							<a data-goto=".full-screen" class="header__logo">Damshams.</a>
+							<nav class="header__menu menu-header">
+								<div class="menu-header__body">
+									<ul class="menu-header__list">
+										<li>
+											<a data-goto=".page__what" href="#" class="menu-header__link">
+												Что такое вёрстка сайтов?
+											</a>
+										</li>
+										<li>
+											<a data-goto=".page__about-frontend" href="#" class="menu-header__link">
+												О FRONTEND
+											</a>
+										</li>
+										<li>
+											<a data-goto=".about-backend" href="#" class="menu-header__link">
+												О BACKEND
+											</a>
+										</li>
+										<li>
+											<a data-goto=".design" href="#" class="menu-header__link">
+												Дизайн сайтов
+											</a>
+										</li>
+										<li>
+											<a data-goto=".scale" href="#" class="menu-header__link">
+												Сравнение между BACKEND И FRONTEND
+											</a>
+										</li>
+										<li>
+											<a href="#popupExamples" class="menu-header__link open-popup">
+												ПРИМЕРЫ:
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="menu-header__icon-menu">
+									<span></span>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+			</header>
+			<section class="full-screen">
+				<div class="full-screen__bg ibg">
+					<img src="img/full-screen.jpg" alt="full-screen">
+				</div>
+				<div class="full-screen__container container">
+					<div class="full-screen__body ">
+						<h1 class="full-screen__title _anim-items">
+							Разработка веб-сайтов
+						</h1>
+						<div class="full-screen__text _anim-items">
+							Что такое вёрстка сайтов, и зачем это нужно?
+						</div>
+						<h2 class="full-screen__sub-title _anim-items">
+							<p>Работу выполнили ученики 7 Д класса:</p>
+							<span>Денис Олиневич</span>
+							<span>Торопов Кирилл</span>
+						</h2>
+					</div>
+				</div>
+				<div class="full-screen__body ">
+					<h1 class="full-screen__title">
+						Разработка веб-сайтов
+					</h1>
+					<div class="full-screen__text">
+						Как верстать сайты, и зачем это нужно?
+					</div>
+					<h2 class="full-screen__sub-title">
+						Работу выполнили: <br>
+						Денис Олиневич <br>
+						Торопов Кирилл
+					</h2>
+				</div>
+			</section>
+			<main class="page">
+				<section class="page__what what">
+					<div class="what__bg ibg">
+						<img src="img/what.jpg" alt="what-bg">
+					</div>
+					<div class='what__container container'>
+						<div class="what__body">
+							<h2 class="what__title title">
+								Что такое вёрстка сайтов, и зачем она нужна?
+							</h2>
+							<div class="what__text">
+								Вёрстка веб-страниц (сайтов) — это создание некой структуры гипертекстового документа на основе
+								HTML-разметки,
+								c использованием таблиц стилей или же другим языком стилизацией самого HTML-документа.
+							</div>
+							<div class="what__point">
+								<h3 class="what__sub-title icon-check-mark">
+									Этапы вёрстки:
+								</h3>
+								<ul class="what__list">
+									<li class="what__item">
+										Создаём новый проект
+									</li>
+									<li class="what__item">
+										Строим HTML-структуру
+									</li>
+									<li class="what__item">
+										И стилизуем этот HTML-документ
+									</li>
+									<li class="what__item">
+										Передаём свой проект BACKEND разработчику.
+									</li>
+								</ul>
+							</div>
+							<div class="what__point">
+								<h3 class="what__sub-title icon-medal">
+									Какой должна быть вёрстка сайтов:
+								</h3>
+								<ul class="what__list">
+									<li class="what__item">
+										Конечно же вёрстка сайтов должна быть адаптивной или другим языком должна быть подстроена
+										под
+										все устройства, то есть
+										на компьютере помещается больше контента, чем на телефоне, соответственно на телефоне как
+										минимум нужно уменьшать шрифт текста,чтобы он уместился в экран.
+									</li>
+									<li class="what__item">
+										И обязательным фактором является читабельность кода, и оптимизированность, чтобы наш сайт
+										работал быстрее.
+										<a href="#popupJavaScriptCode" class="what__link open-popup">Разберём пример кода на
+											JavaScript</a>
+									</li>
+									<li class="what__item">
+										И не мало важный фактор - это семантическая вёрстка, <a class="what__link open-popup"
+											href="#popupHTMLtags">для этого обратимся к тегам HTML</a>
+										То есть есть обычный тег div, он может использоваться много раз в веб-вёрстке, и есть
+										семантические теги, и допустим наш пользователь сайта незрячий, и для того чтобы
+										ориентироваться по сайту,придумали семантические теги
+										допустим при наведении на тег header или при клике на него, у незрячего пользователя будет
+										звук по типу: "Шапка", "Header".
+									</li>
+									<li class="what__item">
+										Также в наше время продвигаются технологии и в вёрстке сайтов появляются новые
+										возможности,
+										которые во многих браузерах не видны,т.к. кроссбраузерность у них пока маленькая или
+										другим
+										языком - поддержка всех браузеров. <br>
+										Поэтому во многих ситуациях приходится использовать какие-то старые возможности чтобы
+										кроссбраузерность была больше.
+									</li>
+									<li class="what__item">
+										Также вёрстка должна быть "Гибкой", то есть при изменении контента, она должна не
+										"ломаться", то есть чтобы контент отображался хорошо при маленьком количестве текста и при
+										большом. </li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<section class="page__about-frontend about-frontend">
+					<div class="about-frontend__bg ibg">
+						<img src="img/frontend.jpg" alt="frontend-bg">
+					</div>
+					<div class='about-frontend__container container'>
+						<div class="about-frontend__body">
+							<h2 class="about-frontend__title title _anim-items">
+								Что такое <span>FRONTEND-разработчик</span> и что он делает?
+							</h2>
+							<div class="about-frontend__front">
+								FRONTEND-разработчик занимается разработкой графического интерфейса — той
+								части приложений, которую видит пользователь. Они превращают макет, созданный веб-дизайнером, в
+								функциональный и удобный пользовательский интерфейс. Корректное отображение полей и блоков,
+								работающие кнопки и формы для ввода данных — всё, с чем сталкивается пользователь в браузере,
+								находится в зоне ответственности фронтендеров.
+							</div>
+							<h3 class="about-frontend__sub-title">
+								На чём пишется FRONTEND?
+							</h3>
+							<div class="about-frontend__text">
+								<span class="_anim-items">FRONTEND пишется на HTML CSS JS</span>
+								<ul class="_anim-items">
+									<li>HTML - это язык гипертекстовой разметки, то есть весь текст, контент и все HTML-теги, это
+										всё язык гипертекстовой разметки.</li>
+									<li>CSS - это таблица стилей, с помощью которой стилизуется сам HTML-документ, то есть цвет
+										текста, размер шрифта и так далее..</li>
+									<li>JavaScript - это уже полноценный язык программирования - который отвечает за разные
+										выпадающие меню разные подменю, плавную прокрутку страницы и слайдеры.</li>
+								</ul>
+							</div>
+							<div class="about-frontend__images ">
+								<div class="about-frontend__image">
+									<img src="img/html.jpg" alt="html">
+								</div>
+								<div class="about-frontend__image">
+									<img src="img/css.jpg" alt="css">
+								</div>
+								<div class="about-frontend__image">
+									<img src="img/js.jpg" alt="JavaScript">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__about-frontend about-frontend about-backend">
+					<div class="about-frontend__bg ibg">
+						<img src="img/backend.jpg" alt="frontend-bg">
+					</div>
+					<div class='about-frontend__container container'>
+						<div class="about-frontend__body">
+							<h2 class="about-frontend__title title _anim-items">
+								Что такое <span>BACKEND-разработчик</span> и что он делает?
+							</h2>
+							<div class="about-frontend__front">
+								BACKEND-разработчик отвечает за внутреннюю функциональность сайта.
+								Бэкенд-разработчик работает с сервером — невидимой частью сайта, где хранится вся информация.
+								Он создает базы данных и управляет ими, проводит интеграции с внешними сервисами и занимается
+								всем, что находится «под капотом» сайта.
+								Работу бэкенд-разработчика обычный пользователь увидеть не может, но именно благодаря ей сайт
+								функционирует.
+							</div>
+							<h3 class="about-frontend__sub-title">
+								На чём пишется BACKEND?
+							</h3>
+							<div class="about-frontend__text">
+								<span class="_anim-items">В BACKEND разработке не как во FRONTEND, потому что есть выбор на
+									каком языке писать:
+									Cамые известные Python (Django),PHP,JAVA </span>
+								<ul class="_anim-items">
+									<li>Python - это ООП язык программирования, который широко используется в
+										интернет-приложениях, разработке программного обеспечения, Data Science и машинном
+										обучении.Для создания BACKEND используется фреймворк django или Flask. Они отличаются
+										мощностью, возможностями и синтаксисом.На django был написан youtube.</li>
+									<li>PHP - это C-подобный скриптовый язык общего назначения, интенсивно применяемый для
+										разработки веб-приложений. Самый слабый по производительности язык из приведенного списка,
+										но на нем написаны 80% сайтовю</li>
+									<li>Строго типизированный ООП язык программирования общего назначения, разработанный
+										компанией Sun Microsystems. Это самый мощный язык програмирования для создания сайтовю
+									</li>
+								</ul>
+							</div>
+							<div class="about-frontend__images">
+								<div class="about-frontend__image">
+									<img src="img/python.jpeg" alt="python">
+								</div>
+								<div class="about-frontend__image">
+									<img src="img/java.webp" alt="java">
+								</div>
+								<div class="about-frontend__image">
+									<img src="img/php.jpg" alt="php">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__design design">
+					<div class="design__bg ibg">
+						<img src="img/design.jpg" alt="bg">
+					</div>
+					<div class='design__container container'>
+						<div class="design__body">
+							<h2 class="design__title title">
+								Дизайн сайтов, что это?
+							</h2>
+							<div class="design__text">
+								<span>Дизайн сайтов или же проектирование макета сайта</span> - это проектирование
+								пользовательских интерфейсов только в виде
+								макета, который
+								передаётся верстальщику и верстальщик в дальнейшем с ним работает. Другими словами, есть человек
+								"дизайнер" и он рисует веб-сайт в программе и дальше верстальщик делает этот "рисунок"
+								веб-сайтом.
+
+
+							</div>
+							<div class="design__text">
+								<span>Макет</span> - это модель объекта в уменьшеном виде, грубо говоря чертёж.
+							</div>
+							<h3 class="design__sub-title">
+								Примеры макетов:
+							</h3>
+							<div class="design__images">
+								<div class="design__image _anim-items"><img src="img/design_01.png" alt="image">
+								</div>
+								<div class="design__image _anim-items"><img src="img/design_02.png" alt="image">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__scale scale">
+					<div class="scale__bg ibg">
+						<img src="img/conclution.avif" alt="bg">
+					</div>
+					<div class='scale__container container'>
+						<div class="scale__body">
+							<h2 class="scale__title title">
+								Сравнение <span>FRONTEND</span> и <span>BACKEND</span>
+							</h2>
+							<div class="scale__columns">
+								<article class="scale__column">
+									<div class="scale__item item-scale">
+										<h2 class="item-scale__title">
+											FRONTEND
+										</h2>
+										<div class="item-scale__point">
+
+											<ul class="item-scale__list">
+												<li class="item-scale__item">
+													Если человек любит строить некую структуру, стилизовать эту структуру, то
+													FRONTEND ему понравится
+												</li>
+												<li class="item-scale__item">
+													Во FRONTEND'e довольно легко начать писать код, достаточно скопировать прошлый
+													проект и очистить весь код.
+
+												</li>
+												<li class="item-scale__item">
+													Процесс обучения не настолько сложный, главное понимать, что ты делаешь и зачем.
+													В то время в BACKEND нужно определиться, в какую сферу ты будешь изучать.
+												</li>
+
+												<li class="item-scale__item">
+													Как по-моему мнению, писать FRONTEND код очень интересно, ты строишь структуру
+													изменяешь её, стилизуешь, в общем чувствуешь себя дизайнером.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</article>
+								<div class="bd"></div>
+								<article class="scale__column">
+									<div class="scale__item item-scale">
+										<h2 class="item-scale__title">
+											BACKEND
+										</h2>
+										<div class="item-scale__point">
+
+											<ul class="item-scale__list">
+												<li class="item-scale__item">
+													Если человек любит решать логические задачи на протяжении часа и больше, то
+													BACKEND скореев всего ему понравится
+												</li>
+												<li class="item-scale__item">
+													В BACKEND вы будете писать код на протяжении часа и результат увидете только под
+													конец.
+												</li>
+												<li class="item-scale__item">
+													Если появится ошибка, то придется проверять весь код, для того чтобы исправить
+													ошибку
+												</li>
+
+												<li class="item-scale__item">
+													И неплохой плюс в том, что зарплата выше чем у FRONTEND-разработчиков.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="scale__conclusion conclusion">
+								<a href="parallax.html" class="conclusion__label ">
+									В заключении можно сказать
+								</a>
+
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+			</main>
+
+			<article id="popupExamples" class="popup">
+				<div class="popup__wrapper">
+					<div class="popup__body">
+						<div class="popup__close close-popup">X</div>
+						<ul class="popup__list">
+							<li><a target="_blank" href="https://shampun54.github.io" class="popup__link">Сайт
+									Автосалона</a></li>
+							<li><a target="_blank" href="https://shampun60.github.io" target="_blank"
+									class="popup__link">Интернет магазин
+									Телескопов</a></li>
+							<li><a target="_blank" href="https://shampun58.github.io" class="popup__link">Сайт Ресторана</a>
+							</li>
+							<li><a target="_blank" href="https://shampun55.github.io" class="popup__link">Сайт Детского
+									Магазина</a>
+							</li>
+							<li><a target="_blank" href="https://shampun56.github.io" class="popup__link">Сайт По Аренде
+									дорогих авто</a>
+							</li>
+						</ul>
+						<div class="popup__another">
+							И другие..
+						</div>
+					</div>
+				</div>
+			</article>
+			<article id="popupJavaScriptCode" class="popup popup-white-bgc">
+				<div class="popup__wrapper">
+					<div class="popup__body">
+						<div class="popup__close close-popup">X</div>
+						<div class="popup__image">
+							<img src="img/optimize.png" alt="img">
+						</div>
+					</div>
+				</div>
+			</article>
+			<article id="popupHTMLtags" class="popup popup-white-bgc">
+				<div class="popup__wrapper">
+					<div class="popup__body">
+						<h2 class="popup__title">
+							HTML-теги
+						</h2>
+						<div class="popup__close close-popup">X</div>
+						<div class="popup__tags">
+							<div class="popup__tag">
+								HTML теги - это как бы маленькие хранители контента
+							</div>
+							<div class="popup__tag">
+								И самый основной тег - это <span>div</span>. А точнее был основным, до прихода версии HTML5,
+								когда появились
+								семантические теги <span>header</span>, <span>aside</span>, <span>footer</span>,
+								<span>main</span>.
+							</div>
+
+						</div>
+						<div class="popup__html">
+							<div class="popup__header">
+								header
+							</div>
+							<div class="popup__aside">
+								aside
+							</div>
+							<div class="popup__main">
+								main
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</article>
+		</div>
+
+	</div>
+</body>
+
+<!----------->
+<script src="js/isMobile.js"></script>
+<!----------->
+<script src="js/header.js"></script>
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+<!----------->
+<script src="js/custom.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/ibg.js"></script>
+<!------------>
+<script src="js/popup.js"></script>
+<script src="js/spoller.js"></script>
+<script src="js/rating.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/anim.js"></script>
+<!------------>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

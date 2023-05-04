@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.eot?gy3dit');
+  src: url('../fonts/icons.eot?gy3dit#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?gy3dit') format('truetype'),
+    url('../fonts/fonts/icons.woff?gy3dit') format('woff'),
+    url('../fonts/fonts/icons.svg?gy3dit#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-box:before {
+  content: "\e900";
+}
+
+.icon-cart:before {
+  content: "\e901";
+  color: #747883;
+}
+
+.icon-check-mark:before {
+  content: "\e902";
+  color: #747883;
+}
+
+.icon-close:before {
+  content: "\e903";
+  color: #747883;
+}
+
+.icon-columns-one:before {
+  content: "\e904";
+  color: #747883;
+}
+
+.icon-columns-two:before {
+  content: "\e905";
+  color: #747883;
+}
+
+.icon-delivery-car:before {
+  content: "\e906";
+  color: #747883;
+}
+
+.icon-heart:before {
+  content: "\e90c";
+  color: #747883;
+}
+
+.icon-length-arrow-right:before {
+  content: "\e90d";
+  color: #747883;
+}
+
+.icon-like:before {
+  content: "\e90e";
+  color: #747883;
+}
+
+.icon-location .path1:before {
+  content: "\e90f";
+  color: rgb(255, 255, 255);
+}
+
+.icon-location .path2:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(116, 120, 131);
+}
+
+.icon-mail:before {
+  content: "\e911";
+  color: #9a9c9e;
+}
+
+.icon-marker-location:before {
+  content: "\e912";
+  color: #747883;
+}
+
+.icon-medal:before {
+  content: "\e913";
+  color: #747883;
+}
+
+.icon-phone:before {
+  content: "\e914";
+  color: #747883;
+}
+
+.icon-scales:before {
+  content: "\e915";
+  color: #747883;
+}
+
+.icon-search:before {
+  content: "\e916";
+  color: #747883;
+}
+
+.icon-time:before {
+  content: "\e91a";
+  color: #747883;
+}
+
+.icon-user:before {
+  content: "\e91b";
+  color: #747883;
+}
+
+.icon-zap:before {
+  content: "\e91c";
+  color: #747883;
+}
+
+.icon-apps:before {
+  content: "\e91d";
+  color: #747883;
+}
+
+.icon-arrow-down:before {
+  content: "\e91e";
+  color: #747883;
+}
+
+.icon-arrow-right:before {
+  content: "\e91f";
+  color: #747883;
+}

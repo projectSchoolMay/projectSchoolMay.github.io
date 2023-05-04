@@ -1,0 +1,420 @@
+//==========================FOOTER============================================================================================================================================
+.footer {
+	width: 100%;
+	background-color: #F7F8FB;
+
+	// .footer__container
+
+
+	&__container {}
+
+	// .footer__body
+
+	&__body {
+		display: grid;
+
+		@media (min-width: $md5) {
+			grid-template-columns: repeat(4, 1fr);
+			justify-content: space-between;
+		}
+
+		@media (max-width: $md5) {
+			display: grid;
+
+		}
+
+		@include adaptiv-value("padding-top", 40, 30, 1);
+		@include adaptiv-value("padding-bottom", 60, 30, 1);
+		gap: 20px;
+	}
+
+	// .footer__main
+
+	&__main {}
+
+	// .footer__menu
+
+	&__menu {
+		grid-column: span 2;
+	}
+
+	// .footer__contacts
+
+	&__contacts {}
+
+	// .footer__copy
+
+	&__copy {
+		background-color: #F2F5F9;
+		padding: 21px 0px;
+		width: 100%;
+
+		@media (max-width: $md5) {
+			margin: 0px 0px 70px 0px;
+
+		}
+	}
+}
+
+.main-footer {
+
+	// .main-footer__body
+
+	&__body {}
+
+	// .main-footer__logo
+
+	&__logo {
+		display: inline-block;
+		margin: 0px 0px 20px 0px;
+	}
+
+	// .main-footer__text
+
+	&__text {
+		font-size: 16px;
+		line-height: 137%;
+		color: $darkGrayColor;
+		font-weight: 400;
+		margin: 0px 0px calc(10/16* 1em) 0px;
+		display: flex;
+		align-items: flex-start;
+
+		&:before {
+			margin: 0px 10px 0px 0px;
+		}
+	}
+
+	// .main-footer__e-mail
+
+	&__e-mail {
+		color: $blueColor;
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 137%;
+		margin: 0px 0px calc(20/16* 1em) 0px;
+
+		&:before {
+			margin: 0px 12px 0px 0px;
+		}
+	}
+
+	// .main-footer__image
+
+	&__image {}
+}
+
+.menu-footer {
+
+	// .menu-footer__body
+
+	&__body {
+		display: grid;
+
+		@media (min-width: $md5) {
+			grid-auto-flow: column;
+			align-items: start;
+		}
+
+		gap: 20px;
+
+		@media (max-width: $md5) {
+			grid-auto-flow: row;
+			gap: 0;
+		}
+	}
+
+	&__block {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		grid-auto-flow: row;
+		height: 100%;
+
+		@media (max-width: $md4) {
+			height: auto;
+		}
+
+		@media (max-width: $md5) {
+			justify-content: stretch;
+		}
+	}
+
+	// .menu-footer__label
+
+	&__label {
+		justify-self: start;
+		white-space: nowrap;
+
+		@media (min-width: $md5) {
+			cursor: default;
+
+
+			&:before {
+				display: none;
+			}
+		}
+
+		@media (max-width: $md5) {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+
+			&._active {
+				&:before {
+					transform: rotate(180deg);
+					transition: all 0.3s ease 0s;
+				}
+			}
+
+			&:before {
+				transition: all 0.3s ease 0s;
+				font-size: 12px;
+			}
+		}
+	}
+
+	// .menu-footer__list
+
+	&__list {
+
+
+		li {
+			&:not(:last-child) {
+				margin: 0px 0px 5px 0px;
+			}
+		}
+	}
+
+	// .menu-footer__link
+
+	&__link {
+		color: $grayColor;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 137%;
+	}
+
+	// .menu-footer__icons
+
+	&__icons {
+		align-self: end;
+
+		@media (max-width: $md4) {
+			.menu-footer__icons-list {
+				justify-content: start;
+				gap: 20px;
+			}
+
+			margin: 0px 0px 20px 0px;
+
+		}
+	}
+
+	&__icons-list {
+		display: grid;
+		gap: 10px;
+	}
+
+	// .menu-footer__icons-label
+
+	&__icons-label {
+		color: $lightGrayColor;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 128%;
+		margin: 0px 0px calc(10/14* 1em) 0px;
+		grid-row: 1 / 2;
+		white-space: nowrap;
+	}
+
+	// .menu-footer__icon
+
+	&__icon {
+		grid-row: 2 / 3;
+	}
+}
+
+.contacts-footer {
+
+	// .contacts-footer__body
+
+	&__body {
+		display: grid;
+	}
+
+	// .contacts-footer__label
+
+	&__label {}
+
+	// .contacts-footer__phone
+
+	&__phone {
+		@include adaptiv-value("font-size", 24, 16, 1);
+
+
+
+		font-family: 'Circe';
+		font-weight: 700;
+		line-height: 116%;
+		color: $darkGrayColor;
+		margin: 0px 0px calc(10/24* 1em) 0px;
+	}
+
+	// .contacts-footer__icons
+
+	&__icons {
+		display: grid;
+		gap: 15px;
+		grid-auto-flow: column;
+
+		@media (max-width: $md5) {
+			justify-content: start;
+		}
+
+	}
+
+	// .contacts-footer__icon
+
+	&__icon {
+		background-color: #fff;
+		padding: 12px;
+		border-radius: 5px;
+		justify-self: start;
+		align-self: start;
+	}
+}
+
+.footer-contacts {
+
+	// .footer-contacts__list
+
+	&__list {
+		display: grid;
+		grid-auto-flow: row;
+		margin: 0px 0px 20px 0px;
+
+		li {
+			&:not(:last-child) {
+				margin: 0px 0px 5px 0px;
+			}
+		}
+	}
+
+	// .footer-contacts__link
+
+	&__link {
+		font-weight: 500;
+		font-size: 16px;
+		color: $darkGrayColor;
+		line-height: 137%;
+	}
+
+	// .footer-contacts__buttons
+
+	&__buttons {
+		display: grid;
+		grid-auto-flow: row;
+		gap: 10px;
+
+
+	}
+
+	// .footer-contacts__button
+
+	&__button {
+		font-size: 14px;
+		line-height: 128%;
+		font-weight: 500;
+
+		@media (max-width: $md5) {
+			justify-self: start;
+		}
+
+		&:nth-child(2) {
+			color: $grayColor;
+			background-color: #F1DA09;
+			transition: all 0.8s ease 0s;
+		}
+
+		@media(any-hover: hover) {
+			&:hover {
+				&:nth-child(2) {
+					transition: all 0.8s ease 0s;
+					background-color: #EEEE36;
+				}
+			}
+		}
+
+		&:nth-child(1) {
+			color: $blueColor;
+			background-color: #fff;
+			box-shadow: 0px 5px 20px rgba(63, 66, 69, 0.05);
+
+		}
+
+		text-align: center;
+		border-radius: 10px;
+		padding: 11px 21px;
+	}
+}
+
+.copy-footer {
+	&__body {
+		display: grid;
+
+		@media (min-width: $md5) {
+			grid-auto-flow: column;
+			grid-template-columns: repeat(4, auto);
+		}
+
+		align-items: center;
+
+		@media (max-width: $md5) {
+			display: grid;
+			grid-auto-flow: row;
+			justify-content: center;
+			gap: 20px;
+			text-align: center;
+		}
+	}
+
+
+	// .copy-footer__rules
+
+	&__rules {
+		@media (min-width: $md5) {
+			justify-self: start;
+		}
+	}
+
+	// .copy-footer__politic
+
+	&__politic {
+		@media (min-width: $md5) {
+			justify-content: center;
+		}
+	}
+
+	// .copy-footer__argeement
+
+	&__argeement {
+		@media (min-width: $md5) {
+			justify-content: center;
+		}
+	}
+
+	// .copy-footer__card-site
+
+	&__card-site {
+		@media (min-width: $md5) {
+			justify-self: end;
+		}
+	}
+
+
+}
